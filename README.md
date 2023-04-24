@@ -1,2 +1,2 @@
 # notes
-just some notes, u can see these in my blogs
+just some notes, u can see these in my blogs.
