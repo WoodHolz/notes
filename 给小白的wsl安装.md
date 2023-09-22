@@ -12,7 +12,7 @@
 
 ![image-20230919112447312](https://cdn.jsdelivr.net/gh/WoodHolz/cloudimg/picture/image-20230919112447312.png)
 
-勾选___适用于Linux的Windows子系统___ 和 ___虚拟机平台___ 这两个选项 , 如下图, 点击确定退出, __需要重启电脑__
+勾选**适用于Linux的Windows子系统**和**虚拟机平台**这两个选项 , 如下图, 点击确定退出, __需要重启电脑__
 
 <img src="https://cdn.jsdelivr.net/gh/WoodHolz/cloudimg/picture/image-20230919113252966.png" alt="image-20230919113252966" style="zoom:150%;" />
 
@@ -43,6 +43,16 @@
 打开的`Windows Terminal`, 点击圈起来的图标, 如下图
 
 ![image-20230919114708127](https://cdn.jsdelivr.net/gh/WoodHolz/cloudimg/picture/image-20230919114708127.png)
+
+并运行下面两行命令:
+
+``` powershell
+wsl --set-default-version 2 # 设置`wsl`的版本
+```
+
+``` powershell
+wsl --update # 更新`wsl`
+```
 
 如果前面的`Ubuntu`下载完成, 应该可以看到, 如下图
 
