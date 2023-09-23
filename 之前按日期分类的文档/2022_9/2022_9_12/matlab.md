@@ -1,0 +1,1 @@
+R2016a之后就最好不要使用plotyy啦，具体可以在matlab fx中搜索plotyy，替代他的函数为yyaxis（详情可以搜yyaxis），因为兼容性的问题

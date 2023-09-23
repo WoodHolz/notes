@@ -16,6 +16,8 @@
 
 <img src="../picture/image-20221106235229062.png" alt="image-20221106235229062" style="zoom:67%;" />
 
+
+
 `linux`内核收发的流程图（其中`tcp_rcv_established`占大头）
 
 `tcp`在`ESTABLISHED`链接建立的状态下`tcp`状态机的抽象
@@ -30,7 +32,11 @@
 
 <img src="../picture/image-20221107093428125.png" alt="image-20221107093428125" style="zoom: 67%;" />
 
-​								`tcp`在`ESTABLISHED`下的流程
+
+
+![image-20230623153714825](https://cdn.jsdelivr.net/gh/WoodHolz/cloudimg/picture/image-20230623153714825.png)
+
+`tcp`在`ESTABLISHED`下的流程
 
 `tcp` 2022_08 RFC 9293
 

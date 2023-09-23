@@ -36,7 +36,7 @@ sudo bpftrace -e 'BEGIN{printf("Hello, World!\n");}END{printf("Bye, World!\n")}'
 
 在pbftrace执行开始时打印Hello,World!\n  按ctrl+c推出结束时执行打印Bye,World!\n 
 
-![img](D:\note\2022_7\2022_7_16\KQZOIAQAR4.png)
+![img](..\\2022_7\2022_7_16\KQZOIAQAR4.png)
 
 
 
@@ -56,7 +56,7 @@ bpftrace -e 'kprobe: vfs_read {@ID = pid;}'
 
 //在根用户模式下， 否则请在语句最前方补上sudo
 
-![img](D:\note\2022_7\2022_7_16\OQZ6IAQAVQ.png)
+![img](..\\2022_7\2022_7_16\OQZ6IAQAVQ.png)
 
 
 
@@ -78,7 +78,7 @@ s:2 其中s为时间单位; 这里设置时间周期为2秒
 
 bpftrace -e 'kprobe: vfs_read {@str[pid] = nsecs} kretprobe:vfs_read /@str[pid]/ {@time[comm] = nsecs - @str[pid]; delete(@str[pid])}'//正确语句
 
-![img](D:\note\2022_7\2022_7_16\3QZ6IAQAAA.png)
+![img](..\\2022_7\2022_7_16\3QZ6IAQAAA.png)
 
 
 
@@ -106,15 +106,15 @@ delete删除@str[pid]的内容，因为并没有在打印后被删除
 
 程序：
 
-![img](D:\note\2022_7\2022_7_16\BMT6IAQAPY.png)
+![img](..\\2022_7\2022_7_16\BMT6IAQAPY.png)
 
 结果
 
-![img](D:\note\2022_7\2022_7_16\VITOIAQAIA.png)
+![img](..\\2022_7\2022_7_16\VITOIAQAIA.png)
 
 这里检测使用用户态的探针，注意程序调用可以使用绝对地址和间接地址(但需要在同一目录下)，路径不能包含中文字符。
 
-![img](D:\note\2022_7\2022_7_16\IAV6IAQA4Y.png)
+![img](..\\2022_7\2022_7_16\IAV6IAQA4Y.png)
 
 
 
@@ -126,4 +126,4 @@ delete删除@str[pid]的内容，因为并没有在打印后被删除
 
 选用的传统工具：pktstat、iptraf
 
-![img](D:\note\2022_7\2022_7_16\SYYOIAQAKM.png)
+![img](..\\2022_7\2022_7_16\SYYOIAQAKM.png)

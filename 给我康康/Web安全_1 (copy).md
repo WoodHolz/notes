@@ -43,7 +43,7 @@ Web安全即网站安全
 
 Linux环境下基于Docker的DVWA靶场搭建
 
-```
+```shell
 # docker的安装
 sudo apt-get install -y docker docker-compose
 
@@ -69,7 +69,8 @@ sudo docker search dvwa
 sudo docker pull *** 	#此处填写你指定的文件以拉取安装
 sudo docker run --rm --name dvwa -it -p 8888:80 citizenstig/dvwa #docker运行dvwa
 netstat -ntulp |grep 8888 # 查看容器指定的端口是否被打开
-本地访问localhost:8888
+本地使用浏览器访问
+localhost:8888
 
 /* default account
  * 账号:admin

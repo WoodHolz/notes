@@ -1,4 +1,4 @@
-<img src="../../picture/协议栈函数.png" alt="协议栈函数"  />
+<img src="../picture/协议栈函数.png" alt="协议栈函数"  />
 
 粗略了解了接收包，IP，TCP途径的一些函数关系
 
