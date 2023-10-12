@@ -19,3 +19,12 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 https://zhuanlan.zhihu.com/p/557199534
 
 https://github.com/askfiy/nvim/blob/master/lua/core/after/autocmd.lua
+
+## vim plug install fatal
+
+vim ~/.githubconfig 
+
+> [http "https://github.com"]
+>   proxy = socks5://127.0.0.1:7890
+> [https "https://github.com"]
+>   proxy = socks5://127.0.0.1:7890
